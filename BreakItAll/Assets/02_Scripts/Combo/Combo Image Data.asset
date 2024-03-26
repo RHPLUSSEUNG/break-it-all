@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 360b2ae4091dda94b8b5d48bfbd1be2b, type: 3}
+  m_Name: Combo Image Data
+  m_EditorClassIdentifier: 
+  comboImage:
+  - {fileID: 2750238206068698094, guid: b4d60cd3ce2c25944b28a617e13bbc77, type: 3}
+  - {fileID: 1187972722704382891, guid: 0cafbbc02d1b44e458792478eb1138a5, type: 3}
+  - {fileID: 3695402840047843569, guid: 2d28efc8ad3f6424b9c38c08c95b3f95, type: 3}
+  - {fileID: 5287375569488561786, guid: 34e90394d9d78f44e8ee3c103c0674b3, type: 3}
+  - {fileID: 7180130998244460718, guid: bf66138b58fbf734ca7f5d7266e90c39, type: 3}
+  - {fileID: 3032861010139854428, guid: a42b469f11b829a4584d46540d6e7575, type: 3}
+  - {fileID: 7654727315952641747, guid: b8ebc68842821064c9da87916058b5da, type: 3}
+  - {fileID: 3473557219461224655, guid: 8f3b44fc10e5576438ca20c8115140db, type: 3}
