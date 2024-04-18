@@ -9,7 +9,8 @@ public class ComboManager : MonoBehaviour
     ScoreManager scoreManager;
     Blade blade;
 
-    [SerializeField] GameObject[] comboImg;
+    [SerializeField] TextMeshProUGUI comboText;
+    [SerializeField] GameObject comboTextPivot;
 
     Vector3 coPos;
 
@@ -90,7 +91,9 @@ public class ComboManager : MonoBehaviour
         if (comboCount >= 3 && comboLimitTime < comboTimer)
         {
             int _comboCount = comboCount - 3;
-            Instantiate(comboImg[_comboCount], coPos, Quaternion.identity, GameObject.Find("Combo Image").transform);
+
+            comboText.text = "Combo! " + comboCount.ToString();
+            Instantiate(comboText, coPos, Quaternion.identity, comboTextPivot.transform);
 
             scoreManager.UpdateScore(comboScore);
             comboTimer = 0;
