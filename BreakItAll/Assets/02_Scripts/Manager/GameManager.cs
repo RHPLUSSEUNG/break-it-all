@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject preGameUI;
     [SerializeField] GameObject preGameClassicUI;
     [SerializeField] GameObject preGameArcadeUI;
+    [SerializeField] GameObject[] titleText;
     [SerializeField] Button restartButton;
     [SerializeField] Button pauseButton;
     [SerializeField] Button quitButton;
