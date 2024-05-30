@@ -13,9 +13,9 @@ public class ComboMeshTrigger : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {      
-        other.gameObject.GetComponent<Fruit>();
+        other.gameObject.GetComponent<Stuff>();
 
-        if (other.gameObject.GetComponent<Fruit>().fruitType == FruitType.Combo)
+        if (other.gameObject.GetComponent<Stuff>().stuffType == StuffType.Combo)
         {
             other.transform.position = this.transform.position;
             targetInComboMesh = true;                        

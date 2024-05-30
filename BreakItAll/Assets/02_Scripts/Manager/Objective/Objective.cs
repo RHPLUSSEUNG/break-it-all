@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum ObjectiveType
 {
-    SliceFruit,
+    SliceStuff,
     ModeCount,
 }
 

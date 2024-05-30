@@ -46,10 +46,10 @@ public class GameManager : MonoBehaviour
     public bool isCount = false;
     public bool init = false;
 
-    [Header("Start Fruit")]
-    [SerializeField] GameObject classicFruit;
-    [SerializeField] GameObject arcadeFruit;
-    [SerializeField] GameObject preGameFruit;
+    [Header("Start Stuff")]
+    [SerializeField] GameObject classicStuff;
+    [SerializeField] GameObject arcadeStuff;
+    [SerializeField] GameObject preGameStuff;
 
     public bool isBigger;
 
@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.PreGame:
                 scoreManager.PreGameScoreText();
-                preGameFruit.gameObject.SetActive(true);
+                preGameStuff.gameObject.SetActive(true);
                 preGameUI.gameObject.SetActive(true);
                 titleScreen.gameObject.SetActive(false);
                 break;
@@ -147,18 +147,18 @@ public class GameManager : MonoBehaviour
         gameOverText.gameObject.SetActive(false);
         restartButton.gameObject.SetActive(false);
         titleScreen.gameObject.SetActive(true);
-        StartFruitControl();        
+        StartStuffControl();        
         */
     }
 
-    public void StartFruitControl()
+    public void StartStuffControl()
     {
-        if (!classicFruit.activeInHierarchy && !arcadeFruit.activeInHierarchy)
+        if (!classicStuff.activeInHierarchy && !arcadeStuff.activeInHierarchy)
         {
-            classicFruit.GetComponent<Rigidbody>().useGravity = false;
-            arcadeFruit.GetComponent<Rigidbody>().useGravity = false;
-            classicFruit.SetActive(true);
-            arcadeFruit.SetActive(true);
+            classicStuff.GetComponent<Rigidbody>().useGravity = false;
+            arcadeStuff.GetComponent<Rigidbody>().useGravity = false;
+            classicStuff.SetActive(true);
+            arcadeStuff.SetActive(true);
         }
     }
 

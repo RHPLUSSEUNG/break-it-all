@@ -34,7 +34,7 @@ public class ComboManager : MonoBehaviour
     private void Update()
     {
         isCombo();
-        Debug.Log(comboTimer);
+        //Debug.Log(comboTimer);
     }
 
     public void coPosSet(Vector3 pos)
@@ -47,7 +47,7 @@ public class ComboManager : MonoBehaviour
         comboList.Add(_comboCount);
         comboCount = comboList.Count;
         comboTimer = 0;
-        comboScore += _comboCount.GetComponent<Fruit>().pointValue;
+        comboScore += _comboCount.GetComponent<Stuff>().pointValue;
     }
 
     public void isCombo()

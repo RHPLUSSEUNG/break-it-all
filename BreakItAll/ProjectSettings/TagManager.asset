@@ -8,8 +8,8 @@ TagManager:
   - Bad
   - Mesh
   - ComboMesh
-  - Start Fruit
-  - Fruit
+  - Start Stuff
+  - Stuff
   layers:
   - Default
   - TransparentFX

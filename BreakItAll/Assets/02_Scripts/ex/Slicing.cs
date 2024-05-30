@@ -13,16 +13,16 @@ public class Slicing : MonoBehaviour
     private float xRange = 4;
     private float ySpawnPos = -6;
 
-    private Rigidbody fruitRigidbody;
-    private Collider fruitCollider;
+    private Rigidbody stuffRigidbody;
+    private Collider stuffCollider;
     private void Awake()
     {
-        fruitRigidbody = GetComponent<Rigidbody>();
+        stuffRigidbody = GetComponent<Rigidbody>();
     }
     private void Start()
     {
-        fruitRigidbody.AddForce(RandomForce(), ForceMode.Impulse);
-        fruitRigidbody.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
+        stuffRigidbody.AddForce(RandomForce(), ForceMode.Impulse);
+        stuffRigidbody.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
         transform.position = RandomSpawnPos();
     }
 
@@ -46,7 +46,7 @@ public class Slicing : MonoBehaviour
         whole.SetActive(false);
         whole.SetActive(true);
 
-        fruitCollider.enabled = false;
+        stuffCollider.enabled = false;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         sliced.transform.rotation = Quaternion.Euler(0f, 0f, angle);
@@ -55,7 +55,7 @@ public class Slicing : MonoBehaviour
 
         foreach(Rigidbody slice in slices)
         {
-            slice.velocity = fruitRigidbody.velocity;
+            slice.velocity = stuffRigidbody.velocity;
             slice.AddForceAtPosition(direction * force, position, ForceMode.Impulse);
         }
     }

@@ -7,7 +7,7 @@ using UnityEngine;
     [SerializeField] public float spawnTime;
     [SerializeField] public float forceFactor;
     [SerializeField] public Vector3 spawnPosition;
-    [SerializeField] public PoolFruitType fruitType;
+    [SerializeField] public PoolStuffType stuffType;
 }
 
 [System.Serializable] public struct SpawnPattern

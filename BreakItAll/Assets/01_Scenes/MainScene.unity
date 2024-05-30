@@ -3235,9 +3235,9 @@ MonoBehaviour:
   gameState: 0
   isCount: 0
   init: 0
-  classicFruit: {fileID: 386614328}
-  arcadeFruit: {fileID: 55904101}
-  preGameFruit: {fileID: 1286647743}
+  classicStuff: {fileID: 386614328}
+  arcadeStuff: {fileID: 55904101}
+  preGameStuff: {fileID: 1286647743}
   isBigger: 0
 --- !u!4 &281441359
 Transform:
@@ -5443,6 +5443,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1339940269}
     m_Modifications:
+    - target: {fileID: 2879512813165581541, guid: a937aaa67de4142458227beea1105972, type: 3}
+      propertyPath: stuffType
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2879512813277674633, guid: a937aaa67de4142458227beea1105972, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.48
@@ -5490,6 +5494,10 @@ PrefabInstance:
     - target: {fileID: 2879512813278000129, guid: a937aaa67de4142458227beea1105972, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879512813278000129, guid: a937aaa67de4142458227beea1105972, type: 3}
+      propertyPath: m_TagString
+      value: Start Stuff
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17439,8 +17447,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnData: {fileID: 11400000, guid: f1e38c14a60647c4e8f808b01a41e7b6, type: 2}
-  sliceAllFruit: 0
-  sliceFruit: 0000000000000000000000000000000000000000
+  sliceAllStuff: 0
+  sliceStuff: 0000000000000000000000000000000000000000
 --- !u!4 &1957712552
 Transform:
   m_ObjectHideFlags: 0
@@ -17468,16 +17476,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8006eb40888f65645b65b2c5050fbc74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit1: {fileID: 4977183139057079365, guid: f7f041b84bff27c448e1f3235238a34e, type: 3}
-  fruit1PoolCount: 10
-  fruit2: {fileID: 3555760191313608740, guid: e22ba7e227464864db5081ed6fc841cd, type: 3}
-  fruit2PoolCount: 10
-  fruit3: {fileID: 1546942766322392535, guid: 542ccaf403210c04695fb7cbfa5538fa, type: 3}
-  fruit3PoolCount: 10
-  fruitCombo: {fileID: 7725256753688178163, guid: b2f87845fe14ead4389ca7ca2a3b0e49, type: 3}
-  fruitComboPoolCount: 10
-  fruitSlow: {fileID: 6307752209880307213, guid: 127e1614d604a124ba1f7361860c2e5a, type: 3}
-  fruitSlowPoolCount: 10
+  stuff1: {fileID: 4977183139057079365, guid: f7f041b84bff27c448e1f3235238a34e, type: 3}
+  stuff1PoolCount: 10
+  stuff2: {fileID: 3555760191313608740, guid: e22ba7e227464864db5081ed6fc841cd, type: 3}
+  stuff2PoolCount: 10
+  stuff3: {fileID: 4322796518633674658, guid: dfad2c97f7cd33240917cd7cf6ade78c, type: 3}
+  stuff3PoolCount: 10
+  stuffCombo: {fileID: 7725256753688178163, guid: b2f87845fe14ead4389ca7ca2a3b0e49, type: 3}
+  stuffComboPoolCount: 5
+  stuffSlow: {fileID: 6307752209880307213, guid: 127e1614d604a124ba1f7361860c2e5a, type: 3}
+  stuffSlowPoolCount: 5
   bombGameOver: {fileID: 1436969166295561071, guid: d28571fdc23349d48bea621dc684615b, type: 3}
   bombGameOverPoolCount: 10
   bombDecTime: {fileID: 8394349622314633134, guid: 6982afac8120a3d40955b95c32cfaf36, type: 3}
@@ -18450,6 +18458,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1471360569428451543, guid: ff01e1b04cf77c0458d907a92f9c92bc, type: 3}
+      propertyPath: m_TagString
+      value: Start Stuff
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18518,6 +18530,10 @@ PrefabInstance:
     - target: {fileID: 2879512813278000129, guid: bc0703e83ae4bd24b90bd735bdbbfae7, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879512813278000129, guid: bc0703e83ae4bd24b90bd735bdbbfae7, type: 3}
+      propertyPath: m_TagString
+      value: Start Stuff
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

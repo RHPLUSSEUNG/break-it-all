@@ -85,62 +85,62 @@ public class Blade : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Fruit"))
+        if (collision.gameObject.CompareTag("Stuff"))
         {
-            Fruit _fruit = collision.gameObject.GetComponent<Fruit>();
+            Stuff _stuff = collision.gameObject.GetComponent<Stuff>();
 
-            if (collision.gameObject.GetComponent<Fruit>())
+            if (collision.gameObject.GetComponent<Stuff>())
             {
 
-                switch (_fruit.fruitType)
+                switch (_stuff.stuffType)
                 {
-                    case FruitType.Good:
+                    case StuffType.Good:
                         comboManager.AddComboList(collision.gameObject);
-                        collision.gameObject.GetComponent<Fruit>().DestroyTarget();
+                        collision.gameObject.GetComponent<Stuff>().DestroyTarget();
                         break;
-                    case FruitType.Slow:
-                        collision.gameObject.GetComponent<Fruit>().DestroyTarget();
+                    case StuffType.Slow:
+                        collision.gameObject.GetComponent<Stuff>().DestroyTarget();
                         arcadeMode.SlowTime();
                         break;
-                    case FruitType.GameOver:                        
+                    case StuffType.GameOver:                        
                         if(classicMode.shield)
                         {
-                            collision.gameObject.GetComponent<Fruit>().DestroyTarget();
+                            collision.gameObject.GetComponent<Stuff>().DestroyTarget();
                             classicMode.PowerUpShield("consume");
                         }
                         else if(!classicMode.shield)
                         {
-                            collision.gameObject.GetComponent<Fruit>().DestroyTarget();
+                            collision.gameObject.GetComponent<Stuff>().DestroyTarget();
                             gameManager.GameOver();
                         }                        
                         break;
-                    case FruitType.DecreaseTime:
-                        collision.gameObject.GetComponent<Fruit>().DestroyTarget();
+                    case StuffType.DecreaseTime:
+                        collision.gameObject.GetComponent<Stuff>().DestroyTarget();
                         arcadeMode.DecreaseTime();
                         break;
                 }
 
             }
         }
-        else if (collision.gameObject.CompareTag("Start Fruit"))
+        else if (collision.gameObject.CompareTag("Start Stuff"))
         {
 
-            if (collision.gameObject.GetComponent<StartFruit>().fruitType == StartFruitType.Classic)
+            if (collision.gameObject.GetComponent<StartStuff>().stuffType == StartStuffType.Classic)
             {
                 collision.gameObject.SetActive(false);
-                collision.gameObject.GetComponent<StartFruit>().ExplosionParticle();
+                collision.gameObject.GetComponent<StartStuff>().ExplosionParticle();
                 gameManager.ChooseClassic();
             }
-            else if (collision.gameObject.GetComponent<StartFruit>().fruitType == StartFruitType.Arcade)
+            else if (collision.gameObject.GetComponent<StartStuff>().stuffType == StartStuffType.Arcade)
             {
                 collision.gameObject.SetActive(false);
-                collision.gameObject.GetComponent<StartFruit>().ExplosionParticle();
+                collision.gameObject.GetComponent<StartStuff>().ExplosionParticle();
                 gameManager.ChooseArcade();
             }
-            else if (collision.gameObject.GetComponent<StartFruit>().fruitType == StartFruitType.PreGameStart)
+            else if (collision.gameObject.GetComponent<StartStuff>().stuffType == StartStuffType.PreGameStart)
             {
                 collision.gameObject.SetActive(false);
-                collision.gameObject.GetComponent<StartFruit>().ExplosionParticle();
+                collision.gameObject.GetComponent<StartStuff>().ExplosionParticle();
                 StartCoroutine(gameManager.CountDown());
             }
         }
@@ -149,15 +149,15 @@ public class Blade : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        Fruit _fruit = collision.gameObject.GetComponent<Fruit>();
+        Stuff _stuff = collision.gameObject.GetComponent<Stuff>();
 
-        if (collision.gameObject.GetComponent<Fruit>())
+        if (collision.gameObject.GetComponent<Stuff>())
         {
-            if (_fruit.fruitType == FruitType.Combo)
+            if (_stuff.stuffType == StuffType.Combo)
             {
                 camMove.Shake();
-                _fruit.ComboParticle();
-                _fruit.ComboFruitScoreUpdate();
+                _stuff.ComboParticle();
+                _stuff.ComboStuffScoreUpdate();
             }
         }
     }

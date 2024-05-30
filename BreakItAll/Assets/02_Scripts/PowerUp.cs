@@ -10,7 +10,7 @@ public enum PowerType
     ExtraTime_A,
     NerfBombTime_A,
     Critical_CA,
-    BiggerFruit_CA,
+    BiggerStuff_CA,
     ExtraScore_CA,
     Max_Size,
 }
@@ -94,7 +94,8 @@ public class PowerUp : MonoBehaviour
         //[TODO]
     }
 
-    public void BiggerFruit()
+    public void Bigger
+        ()
     {
         gameManager.PowerUpIsBigger("buy");
     }

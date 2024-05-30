@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fruits_tester : MonoBehaviour {
+public class stuffs_tester : MonoBehaviour {
 
-	public GameObject[] fruits;
+	public GameObject[] stuffs;
 	// Use this for initialization
 	void Start () 
 	{
@@ -15,16 +15,16 @@ public class fruits_tester : MonoBehaviour {
 	void Update () 
 	{
 		
-		fruits[0].transform.RotateAround (Vector3.up, Time.deltaTime);
-		fruits[1].transform.RotateAround (Vector3.up, -Time.deltaTime);
-		fruits[2].transform.RotateAround (Vector3.up, Time.deltaTime);
-		fruits[3].transform.RotateAround (Vector3.up, -Time.deltaTime);
-		fruits[4].transform.RotateAround (Vector3.up, Time.deltaTime);
-		fruits[5].transform.RotateAround (Vector3.up, -Time.deltaTime);
-		fruits[6].transform.RotateAround (Vector3.up, Time.deltaTime);
-		fruits[7].transform.RotateAround (Vector3.up, -Time.deltaTime);
-		fruits[8].transform.RotateAround (Vector3.up, Time.deltaTime);
-		fruits[9].transform.RotateAround (Vector3.up, -Time.deltaTime);
+		stuffs[0].transform.RotateAround (Vector3.up, Time.deltaTime);
+		stuffs[1].transform.RotateAround (Vector3.up, -Time.deltaTime);
+		stuffs[2].transform.RotateAround (Vector3.up, Time.deltaTime);
+		stuffs[3].transform.RotateAround (Vector3.up, -Time.deltaTime);
+		stuffs[4].transform.RotateAround (Vector3.up, Time.deltaTime);
+		stuffs[5].transform.RotateAround (Vector3.up, -Time.deltaTime);
+		stuffs[6].transform.RotateAround (Vector3.up, Time.deltaTime);
+		stuffs[7].transform.RotateAround (Vector3.up, -Time.deltaTime);
+		stuffs[8].transform.RotateAround (Vector3.up, Time.deltaTime);
+		stuffs[9].transform.RotateAround (Vector3.up, -Time.deltaTime);
 	
 	}
 }

@@ -1,0 +1,251 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2a8caab90e3a7a49a6679b9bffb65d8, type: 3}
+  m_Name: Stuffs Spawn Data
+  m_EditorClassIdentifier: 
+  spawnPattern:
+  - patternTimer: 0.4
+    spawnElementData:
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 10
+      spawnPosition: {x: -4, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0.4
+      forceFactor: 10
+      spawnPosition: {x: -2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0.4
+      forceFactor: 10
+      spawnPosition: {x: 0, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0.4
+      forceFactor: 10
+      spawnPosition: {x: 2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0.4
+      forceFactor: 10
+      spawnPosition: {x: 4, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0.4
+      forceFactor: 10
+      spawnPosition: {x: 4, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0.4
+      forceFactor: 10
+      spawnPosition: {x: 2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0.4
+      forceFactor: 10
+      spawnPosition: {x: 0, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0.4
+      forceFactor: 10
+      spawnPosition: {x: -2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0.4
+      forceFactor: 10
+      spawnPosition: {x: -4, y: 0, z: 0}
+  - patternTimer: 0.4
+    spawnElementData:
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 10
+      spawnPosition: {x: -4, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 10
+      spawnPosition: {x: -2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 10
+      spawnPosition: {x: 0, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 10
+      spawnPosition: {x: 2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 10
+      spawnPosition: {x: 4, y: 0, z: 0}
+  - patternTimer: 1
+    spawnElementData:
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 10
+      spawnPosition: {x: 0, y: 0, z: 0}
+  - patternTimer: 2
+    spawnElementData:
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 10
+      spawnPosition: {x: 2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 11
+      spawnPosition: {x: -2, y: 0, z: 0}
+  - patternTimer: 2
+    spawnElementData:
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 12
+      spawnPosition: {x: 0, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 11
+      spawnPosition: {x: 2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 11
+      spawnPosition: {x: -2, y: 0, z: 0}
+  - patternTimer: 2
+    spawnElementData:
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 10
+      spawnPosition: {x: 0, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0.2
+      forceFactor: 11
+      spawnPosition: {x: 2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 9
+      spawnPosition: {x: 1, y: 0, z: 0}
+  - patternTimer: 2
+    spawnElementData:
+    - stuffType: 0
+      spawnTime: 0.2
+      forceFactor: 10
+      spawnPosition: {x: -1, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0.2
+      forceFactor: 11
+      spawnPosition: {x: -0.5, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0.2
+      forceFactor: 10
+      spawnPosition: {x: 0, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0.2
+      forceFactor: 9
+      spawnPosition: {x: 0.5, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0.2
+      forceFactor: 12
+      spawnPosition: {x: 1, y: 0, z: 0}
+  - patternTimer: 2
+    spawnElementData:
+    - stuffType: 0
+      spawnTime: 1
+      forceFactor: 10
+      spawnPosition: {x: -2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 1
+      forceFactor: 11
+      spawnPosition: {x: -0.5, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 1
+      forceFactor: 10
+      spawnPosition: {x: 0, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 1
+      forceFactor: 9
+      spawnPosition: {x: 0.5, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 1
+      forceFactor: 12
+      spawnPosition: {x: 0, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 12
+      spawnPosition: {x: 2, y: 0, z: 0}
+  - patternTimer: 2
+    spawnElementData:
+    - stuffType: 0
+      spawnTime: 1
+      forceFactor: 10
+      spawnPosition: {x: -2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 11
+      spawnPosition: {x: 2, y: 0, z: 0}
+  - patternTimer: 2
+    spawnElementData:
+    - stuffType: 0
+      spawnTime: 1
+      forceFactor: 10
+      spawnPosition: {x: -2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 11
+      spawnPosition: {x: 0, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 11
+      spawnPosition: {x: 2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 11
+      spawnPosition: {x: 4, y: 0, z: 0}
+  - patternTimer: 2
+    spawnElementData:
+    - stuffType: 0
+      spawnTime: 1
+      forceFactor: 10
+      spawnPosition: {x: -2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 11
+      spawnPosition: {x: 0, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 11
+      spawnPosition: {x: 2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 11
+      spawnPosition: {x: 4, y: 0, z: 0}
+  - patternTimer: 2
+    spawnElementData:
+    - stuffType: 0
+      spawnTime: 1
+      forceFactor: 10
+      spawnPosition: {x: -2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 11
+      spawnPosition: {x: 0, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 11
+      spawnPosition: {x: 2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 0
+      forceFactor: 11
+      spawnPosition: {x: 4, y: 0, z: 0}
+  - patternTimer: 2
+    spawnElementData:
+    - stuffType: 0
+      spawnTime: 1
+      forceFactor: 12
+      spawnPosition: {x: -2, y: 0, z: 0}
+  - patternTimer: 2
+    spawnElementData:
+    - stuffType: 0
+      spawnTime: 1
+      forceFactor: 12
+      spawnPosition: {x: -2, y: 0, z: 0}
+    - stuffType: 0
+      spawnTime: 1
+      forceFactor: 12
+      spawnPosition: {x: -2, y: 0, z: 0}

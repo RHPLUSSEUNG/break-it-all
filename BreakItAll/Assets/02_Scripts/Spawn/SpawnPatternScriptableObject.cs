@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Fruits Spawn Data", menuName = "Scriptable Object/Spawn Data", order = int.MaxValue)]
+[CreateAssetMenu(fileName = "Stuffs Spawn Data", menuName = "Scriptable Object/Spawn Data", order = int.MaxValue)]
 
 public class SpawnPatternScriptableObject : ScriptableObject
 {
@@ -11,7 +11,7 @@ public class SpawnPatternScriptableObject : ScriptableObject
     [System.Serializable]
     public struct SpawnElementData
     {
-        [SerializeField] public PoolFruitType fruitType;
+        [SerializeField] public PoolStuffType stuffType;
         [SerializeField] public float spawnTime;
         [SerializeField] public float forceFactor;
         [SerializeField] public Vector3 spawnPosition;        
