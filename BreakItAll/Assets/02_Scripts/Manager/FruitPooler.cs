@@ -13,6 +13,7 @@ public enum PoolFruitType
     Bomb_DecTime,
     MAX_SIZE,
 }
+
 public class FruitPooler : MonoBehaviour
 {
     public static FruitPooler Instance;
