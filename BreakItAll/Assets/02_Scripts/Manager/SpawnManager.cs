@@ -47,32 +47,28 @@ public class SpawnManager : MonoBehaviour
             float _forceFactor = spawnData.spawnPattern[patternIndex].spawnElementData[stuffIndex].forceFactor;
             Vector3 _spawnPosition = spawnData.spawnPattern[patternIndex].spawnElementData[stuffIndex].spawnPosition;
             PoolStuffType _stuffType = spawnData.spawnPattern[patternIndex].spawnElementData[stuffIndex].stuffType;
+            if(gameManager.gameMode == GameMode.Arcade)
+            {
+                if(_stuffType == PoolStuffType.Bomb_GameOver)
+                {
+                    _stuffType = PoolStuffType.Bomb_DecTime;
+                }
+            }
             GameObject _stuff;
 
             switch (_stuffType)
             {
                 case PoolStuffType.Stuff1:
-                    _stuff = StuffPooler.Instance.GetStuff(PoolStuffType.Stuff1);
-                    if (_stuff)
-                    {
-                        _stuff.SetActive(true);
-                        _stuff.transform.position = _spawnPosition;
-                        _stuff.GetComponent<Rigidbody>().AddForce(Vector3.up * _forceFactor, ForceMode.Impulse);
-                        _stuff.GetComponent<Rigidbody>().AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
-                    }
-                    break;
                 case PoolStuffType.Stuff2:
-                    _stuff = StuffPooler.Instance.GetStuff(PoolStuffType.Stuff2);
-                    if (_stuff)
-                    {
-                        _stuff.SetActive(true);
-                        _stuff.transform.position = _spawnPosition;
-                        _stuff.GetComponent<Rigidbody>().AddForce(Vector3.up * _forceFactor, ForceMode.Impulse);
-                        _stuff.GetComponent<Rigidbody>().AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
-                    }
-                    break;
                 case PoolStuffType.Stuff3:
-                    _stuff = StuffPooler.Instance.GetStuff(PoolStuffType.Stuff3);
+                case PoolStuffType.Stuff4:
+                case PoolStuffType.Stuff5:
+                case PoolStuffType.Stuff6:
+                case PoolStuffType.Stuff7:
+                case PoolStuffType.Stuff8:
+                case PoolStuffType.Stuff9:
+                case PoolStuffType.Stuff10:
+                    _stuff = StuffPooler.Instance.GetStuff(_stuffType);
                     if (_stuff)
                     {
                         _stuff.SetActive(true);
@@ -135,7 +131,7 @@ public class SpawnManager : MonoBehaviour
 
                 if(patternIndex >= spawnData.spawnPattern.Length)
                 {
-                    patternIndex = 0;
+                    patternIndex = Random.Range(0, spawnData.spawnPattern.Length);
                 }
             }
         }

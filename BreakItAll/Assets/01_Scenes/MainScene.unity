@@ -17482,6 +17482,20 @@ MonoBehaviour:
   stuff2PoolCount: 10
   stuff3: {fileID: 4322796518633674658, guid: dfad2c97f7cd33240917cd7cf6ade78c, type: 3}
   stuff3PoolCount: 10
+  stuff4: {fileID: 8348481703034236896, guid: cbf9cef9ffc61ac4f90d435992673554, type: 3}
+  stuff4PoolCount: 10
+  stuff5: {fileID: 2927798398732087321, guid: bd67da9892cde494f886c4260125a6ee, type: 3}
+  stuff5PoolCount: 10
+  stuff6: {fileID: 1439991988495211725, guid: 0fbf00c675b81be418f13b5e84178c59, type: 3}
+  stuff6PoolCount: 10
+  stuff7: {fileID: 3914406980649451613, guid: 05d7bf8e4f950f24cbcf779cfcf0316b, type: 3}
+  stuff7PoolCount: 10
+  stuff8: {fileID: 5207089562433879207, guid: f3d1750eccf4750449087da08bd54a86, type: 3}
+  stuff8PoolCount: 10
+  stuff9: {fileID: 621532005737429829, guid: 24b05f65805a4744f841d4c9564866e7, type: 3}
+  stuff9PoolCount: 10
+  stuff10: {fileID: 8756010991648709976, guid: b607d3cba488a6f4aaa143578d8193a2, type: 3}
+  stuff10PoolCount: 10
   stuffCombo: {fileID: 7725256753688178163, guid: b2f87845fe14ead4389ca7ca2a3b0e49, type: 3}
   stuffComboPoolCount: 5
   stuffSlow: {fileID: 6307752209880307213, guid: 127e1614d604a124ba1f7361860c2e5a, type: 3}
@@ -18477,6 +18491,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2879512813165581541, guid: bc0703e83ae4bd24b90bd735bdbbfae7, type: 3}
       propertyPath: fruitType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2879512813165581541, guid: bc0703e83ae4bd24b90bd735bdbbfae7, type: 3}
+      propertyPath: stuffType
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2879512813277674633, guid: bc0703e83ae4bd24b90bd735bdbbfae7, type: 3}
