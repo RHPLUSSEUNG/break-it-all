@@ -3231,6 +3231,7 @@ MonoBehaviour:
   quitButton: {fileID: 830750057}
   resumeButton: {fileID: 428502274}
   countText: {fileID: 1576762164}
+  blade: {fileID: 1778155482}
   gameMode: 0
   gameState: 0
   isCount: 0
@@ -16020,6 +16021,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750805608}
   m_CullTransparentMesh: 1
+--- !u!114 &1778155482 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7612979973877485483, guid: 496e0d113c21f6f4391f342efef700b1, type: 3}
+  m_PrefabInstance: {fileID: 7612979974073939986}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47c40d71dba170c46845ade08dac4599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1793572011
 PrefabInstance:
   m_ObjectHideFlags: 0

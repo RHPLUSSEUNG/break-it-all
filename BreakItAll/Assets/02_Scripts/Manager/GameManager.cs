@@ -73,6 +73,11 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         UIStateSwitch();
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     void UIStateSwitch()
