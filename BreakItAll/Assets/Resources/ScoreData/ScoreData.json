@@ -1,17 +1,5 @@
 {
-    "isFirst": false,
-    "classicScore": [
-        0,
-        0,
-        0,
-        0,
-        0
-    ],
-    "arcadeScore": [
-        0,
-        0,
-        0,
-        0,
-        0
-    ]
+    "isFirst": true,
+    "classicScore": [],
+    "arcadeScore": []
 }
