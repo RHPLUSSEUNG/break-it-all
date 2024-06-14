@@ -98,7 +98,7 @@ public class Stuff : MonoBehaviour
             transform.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
             transform.SetParent(transform);
             gameObject.SetActive(false);
-            if (gameManager.gameMode == GameMode.Classic)
+            if (gameManager.gameMode == GameMode.Classic && (stuffType != StuffType.GameOver))
             {
                 classicMode.decreaseLives(1);
             }

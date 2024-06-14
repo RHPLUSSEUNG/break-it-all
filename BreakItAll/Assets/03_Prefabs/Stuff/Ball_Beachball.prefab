@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6422677335084286324}
   - component: {fileID: 1485342333725551806}
   - component: {fileID: 5548436018999575708}
-  m_Layer: 0
+  - component: {fileID: 6096848934976892012}
+  m_Layer: 6
   m_Name: Ball_Beachball
   m_TagString: Stuff
   m_Icon: {fileID: 0}
@@ -100,7 +101,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -121,3 +122,30 @@ MonoBehaviour:
   stuffType: 0
   pointValue: 15
   explosionParticle: {fileID: 7303472089845130122, guid: 6cbc21f5e9162483993a2b84b14d5ac8, type: 3}
+--- !u!54 &6096848934976892012
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2927798398732087321}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
