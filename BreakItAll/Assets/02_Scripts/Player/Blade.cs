@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 [RequireComponent(typeof(TrailRenderer), typeof(BoxCollider))]
 
@@ -19,7 +20,7 @@ public class Blade : MonoBehaviour
     TrailRenderer trail;
     BoxCollider col;
     Vector3 mousePos;
-    bool swiping = false;
+    [SerializeField] bool swiping = false;
 
     public Vector3 direction { get; private set; }
     public float minSliceVelocity = 0.01f;
@@ -43,13 +44,24 @@ public class Blade : MonoBehaviour
 
     private void Update()
     {
+        if (gameManager.gameState == GameState.Pause)
+        {
+            trail.gameObject.SetActive(false);
+            UpdateComponents();
+        }
+        else
+        {
+            trail.gameObject.SetActive(true);
+            UpdateComponents();
+        }
+
         comboTextPivot.transform.position = transform.position;
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && gameManager.gameState != GameState.Pause)
         {
             swiping = true;
             UpdateComponents();
         }
-        else if (Input.GetMouseButtonUp(0))
+        else if (Input.GetMouseButtonUp(0) && gameManager.gameState != GameState.Pause)
         {
             swiping = false;
             UpdateComponents();
@@ -59,14 +71,7 @@ public class Blade : MonoBehaviour
         {
             UpdateMousePosition();
         }
-        if (gameManager.gameState == GameState.Pause)
-        {
-            trail.gameObject.SetActive(false);
-        }
-        else
-        {
-            trail.gameObject.SetActive(true);
-        }
+        
     }
 
     void UpdateMousePosition()
