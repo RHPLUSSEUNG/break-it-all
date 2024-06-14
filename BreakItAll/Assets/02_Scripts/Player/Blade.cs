@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Assertions.Must;
 
 [RequireComponent(typeof(TrailRenderer), typeof(BoxCollider))]
 
@@ -20,7 +19,7 @@ public class Blade : MonoBehaviour
     TrailRenderer trail;
     BoxCollider col;
     Vector3 mousePos;
-    [SerializeField] bool swiping = false;
+    bool swiping = false;
 
     public Vector3 direction { get; private set; }
     public float minSliceVelocity = 0.01f;
@@ -44,24 +43,13 @@ public class Blade : MonoBehaviour
 
     private void Update()
     {
-        if (gameManager.gameState == GameState.Pause)
-        {
-            trail.gameObject.SetActive(false);
-            UpdateComponents();
-        }
-        else
-        {
-            trail.gameObject.SetActive(true);
-            UpdateComponents();
-        }
-
         comboTextPivot.transform.position = transform.position;
-        if (Input.GetMouseButtonDown(0) && gameManager.gameState != GameState.Pause)
+        if (Input.GetMouseButtonDown(0))
         {
             swiping = true;
             UpdateComponents();
         }
-        else if (Input.GetMouseButtonUp(0) && gameManager.gameState != GameState.Pause)
+        else if (Input.GetMouseButtonUp(0))
         {
             swiping = false;
             UpdateComponents();
@@ -71,7 +59,14 @@ public class Blade : MonoBehaviour
         {
             UpdateMousePosition();
         }
-        
+        if (gameManager.gameState == GameState.Pause)
+        {
+            trail.gameObject.SetActive(false);
+        }
+        else
+        {
+            trail.gameObject.SetActive(true);
+        }
     }
 
     void UpdateMousePosition()
@@ -86,8 +81,17 @@ public class Blade : MonoBehaviour
         col.enabled = swiping;
     }
 
-
-
+    public void SwapManagement()
+    {
+        if(swiping)
+        {
+            swiping = false;
+        }
+        else
+        {
+            swiping = true;
+        }
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Stuff"))

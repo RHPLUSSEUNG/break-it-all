@@ -38,6 +38,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI countText;
 
+    [SerializeField] Blade blade;
+
     ScoreManager scoreManager;
 
     [Header("Common Element")]
@@ -164,9 +166,9 @@ public class GameManager : MonoBehaviour
 
     void PauseFunction()
     {
-        gameState = GameState.Pause;
+        gameState = GameState.Pause;        
         if (gameState == GameState.Pause)
-        {
+        {            
             Time.timeScale = 0f;
         }
     }
@@ -175,7 +177,8 @@ public class GameManager : MonoBehaviour
     {
         gameState = GameState.Start;
         if (gameState == GameState.Start)
-        {        
+        {
+            blade.gameObject.SetActive(true);
             Time.timeScale = 1f;
         }        
     }
