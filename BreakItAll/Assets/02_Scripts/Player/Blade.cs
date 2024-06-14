@@ -133,24 +133,24 @@ public class Blade : MonoBehaviour
         }
         else if (collision.gameObject.CompareTag("Start Stuff"))
         {
-
+            Debug.Log("StartMod");
             if (collision.gameObject.GetComponent<StartStuff>().stuffType == StartStuffType.Classic)
             {
-                collision.gameObject.SetActive(false);
-                collision.gameObject.GetComponent<StartStuff>().ExplosionParticle();
                 gameManager.ChooseClassic();
+                collision.gameObject.SetActive(false);
+                collision.gameObject.GetComponent<StartStuff>().ExplosionParticle();                
             }
             else if (collision.gameObject.GetComponent<StartStuff>().stuffType == StartStuffType.Arcade)
             {
-                collision.gameObject.SetActive(false);
-                collision.gameObject.GetComponent<StartStuff>().ExplosionParticle();
                 gameManager.ChooseArcade();
+                collision.gameObject.SetActive(false);
+                collision.gameObject.GetComponent<StartStuff>().ExplosionParticle();                
             }
             else if (collision.gameObject.GetComponent<StartStuff>().stuffType == StartStuffType.PreGameStart)
             {
-                collision.gameObject.SetActive(false);
-                collision.gameObject.GetComponent<StartStuff>().ExplosionParticle();
                 StartCoroutine(gameManager.CountDown());
+                collision.gameObject.SetActive(false);
+                collision.gameObject.GetComponent<StartStuff>().ExplosionParticle();                
             }
         }
 

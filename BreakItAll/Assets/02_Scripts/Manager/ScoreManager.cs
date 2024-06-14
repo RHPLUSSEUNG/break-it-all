@@ -194,19 +194,27 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
+
     [ContextMenu("To Json")]
     public void SaveScore()
     {
         string json = JsonUtility.ToJson(scoreData, true);
-        string path = Application.dataPath + "/ScoreData.json";
+        string path = Application.dataPath + "/Resources/ScoreData/ScoreData.json";
         File.WriteAllText(path, json);
     }
 
+
     public void LoadScore()
     {
-        string path = Application.dataPath + "/ScoreData.json";
-        string json = File.ReadAllText(path);
-        scoreData = JsonUtility.FromJson<ScoreData>(json);
+        TextAsset textAsset = Resources.Load<TextAsset>("ScoreData/ScoreData");
+        if (textAsset != null)
+        {
+            scoreData = JsonUtility.FromJson<ScoreData>(textAsset.text);
+        }
+        else
+        {
+            Debug.LogError("Failed to load score data.");
+        }
     }
 
     public void CompareScore()
